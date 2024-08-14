@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMOTION ANALYZER</h1>
+        <form id="emotion-form">
+            <label for="emotion">Choose an Emotion:</label>
+            <select id="emotion" name="emotion">
+                {% for emotion in emotions %}
+                <option value="{{ emotion }}">{{ emotion }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <label for="user-input">What's on your mind?</label>
+            <textarea id="user-input" name="user_input" rows="5" required></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response-container">
+            <h2>Response:</h2>
+            <p id="response-text"></p>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
