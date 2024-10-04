@@ -57,7 +57,6 @@ reassuring_response = [
     "These feelings only come and go.",
     "You always have that courage in you."
     ]
-}
 
 emotion_list = ["Happy", "Sad", "Anxious", "Fear", "Jealousy", "Guilt", "Shame", "Remorse", "Prideful", "Thankful", "Grieving", "Calm"]
 
